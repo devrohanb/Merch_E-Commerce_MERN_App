@@ -1,0 +1,15 @@
+{
+  "name": "testback",
+  "version": "1.0.0",
+  "description": "Test backend express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Rohan Bari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
