@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const crypto = require("crypto");
 const { v4: uuidv4 } = require("uuid");
@@ -56,14 +56,14 @@ userSchema
   });
 
 // Schema methods :
-userSchema.method = {
+userSchema.methods = {
   // Authenticate by matching / compairing the password entered by user (encrypted from securePassword()) with password stored in database filed as encry_password.
   authenticate: function (plainpassword) {
     return this.securePassword(plainpassword) === this.encry_password;
   },
   // Method to convert the plain string password into encrypted secure password
   securePassword: function (plainpassword) {
-    if (!password) return "";
+    if (!plainpassword) return "";
     try {
       return crypto
         .createHmac("sha256", this.salt)
