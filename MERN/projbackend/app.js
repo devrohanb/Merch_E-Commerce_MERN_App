@@ -7,8 +7,9 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 
-// Importing routes :
+// Importing my routes :
 const authRoutes = require("./routes/auth");
+const userRoutes = require("./routes/user");
 
 //DB Connection
 mongoose
@@ -32,6 +33,7 @@ app.use(cors());
 
 //My Routes
 app.use("/api", authRoutes);
+app.use("/api", userRoutes);
 
 //PORT
 const port = process.env.PORT || 8000; // process.env.PORT is use to fill the port value provided by remote servers after deployment.
