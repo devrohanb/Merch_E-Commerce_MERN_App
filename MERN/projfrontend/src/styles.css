@@ -1,9 +1,24 @@
-.btn,
+.button,
 .jumbotron,
 .nav :hover {
   border-radius: 0px;
 }
 
 body {
-  background: #212629;
+  background: #161616;
+}
+
+background-dark {
+  background: #212121;
+}
+
+bg-dark-2 {
+  background: #212121;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
