@@ -10,12 +10,12 @@ router.post(
   "/signup",
   [
     check("name")
-      .isLength({ min: 5 })
-      .withMessage("Name should be at least 5 character long !!"),
-    check("email").isEmail().withMessage("Please provide a valid email id !!"),
+      .isLength({ min: 2 })
+      .withMessage(" Name should be at least 5 character long !!"),
+    check("email").isEmail().withMessage(" Please provide a valid email id !!"),
     check("password")
       .isLength({ min: 5 })
-      .withMessage("Password should be of 5 character at least !!"),
+      .withMessage(" Password should be of 5 character at least !!"),
   ],
   signup
 );
