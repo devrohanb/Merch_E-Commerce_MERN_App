@@ -80,7 +80,11 @@ const Signup = () => {
               />
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mt-3">
-              <button class="btn btn-success" onClick={onSubmit} type="button">
+              <button
+                class="btn bg-purple text-white"
+                onClick={onSubmit}
+                type="button"
+              >
                 Submit
               </button>
             </div>

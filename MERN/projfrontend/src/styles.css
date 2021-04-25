@@ -8,12 +8,16 @@ body {
   background: #161616;
 }
 
-background-dark {
+.bg-dark-2 {
   background: #212121;
 }
 
-bg-dark-2 {
-  background: #212121;
+.bg-purple {
+  background-color: #7735f9;
+}
+
+.border-none {
+  border-style: none;
 }
 
 footer {

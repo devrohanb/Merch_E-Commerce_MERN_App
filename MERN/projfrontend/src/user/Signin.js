@@ -46,12 +46,11 @@ const Signin = () => {
 
   // redirecting a user
   const performRedirect = () => {
-    //TODO: Redirection pending
     if (didRedirect) {
       if (user && user.role === 1) {
-        return <p> Redirected to Admin Dashboard..</p>;
+        return <Redirect to="/admin/dashboard" />;
       } else {
-        return <p> Redirected to User Dashboard .. </p>;
+        return <Redirect to="/user/dashboard" />;
       }
     }
     if (isAuthenticated()) {
@@ -81,8 +80,7 @@ const Signin = () => {
             className="alert alert-danger"
             style={{ display: error ? "" : "none" }}
           >
-            Failed to create new account !!
-            {error}
+            Failed to login !! {error}
           </div>
         </div>
       </div>
@@ -113,7 +111,11 @@ const Signin = () => {
               />
             </div>
             <div class="d-grid gap-2 col-6 mx-auto mt-3">
-              <button class="btn btn-success" onClick={onSubmit} type="button">
+              <button
+                class="btn bg-purple text-white "
+                onClick={onSubmit}
+                type="button"
+              >
                 Submit
               </button>
             </div>

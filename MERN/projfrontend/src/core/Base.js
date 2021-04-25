@@ -18,9 +18,9 @@ function Base({
       </div>
       <div className={className}>{children}</div>
       <footer className="footer background-dark mt-auto py-3">
-        <div className="container-fluid bg-success text-white text-center py-3">
+        <div className="container-fluid bg-purple text-white text-center py-3">
           <h4>If you have any questions, feel free to react out. </h4>
-          <button className="btn btn-warning btn-lg rounded">Contact Us</button>
+          <button className="btn btn-warning rounded">Contact Us</button>
         </div>
         <div className="container">
           <span className="text-muted">

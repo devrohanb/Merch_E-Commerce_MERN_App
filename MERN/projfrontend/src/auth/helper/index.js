@@ -55,7 +55,7 @@ export const signout = (next) => {
       method: "GET",
     })
       .then((response) => console.log("Signout successfully."))
-      .cathc((err) => console.error(err));
+      .catch((err) => console.error(err));
   }
 };
 
@@ -65,7 +65,7 @@ export const isAuthenticated = () => {
     return false;
   }
   if (localStorage.getItem("jwt")) {
-    // chacking if stored JWT value and user passing JWT value is matching or not
+    // chacking if stored JWT value and user passed JWT value is matching or not
     return JSON.parse(localStorage.getItem("jwt"));
   } else {
     return false;
